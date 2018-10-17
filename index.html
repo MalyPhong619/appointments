@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="utf-8">
-    <title>Appointments</title>
-  </head>
-  <body>
+<head>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <title>Appointments</title>
+</head>
+<body>
 
-    <h1 class="jumbotron">Appointments</h1>
+  <h1 class="jumbotron">Appointments</h1>
 
-    <div class="container">
+  <div class="container">
 
 
     <form class="apt">
 
       <span class="input-group-text" id="basic-addon1">Name</span>
       <input type="text" id="name">
-    <span class="input-group-text" id="basic-addon1">dates</span>
-      <input type="text" id="dates">
-      <span class="input-group-text" id="basic-addon1">Description</span>
-      <input type="text" id="description">
-      <span class="input-group-text" id="basic-addon1">Times</span>
-      <input type="text" id="start" value="Start Time">
-      <input type="text" id="end" value="End Time">
-
-  <button type="submit" name="button">enter</button>
-    </form>
-
-<div class="outputAppointment">
-
-  <p><span id="userName"></span>, This is your appointment information</p>
-
-
-  <p>Based on your description " <span id="userDescription"></span>." The date <span id="appointmentDate"></span> <span id="userTime"></span> is when you'll need to arrive. <span id="endtimes"></span> is when your return</p>
+      <div class="form-group">
+  <label for="dates">Date of appointments:</label>
+  <input id="dates" class="form-control" type="date">
 </div>
+
+      <span class="input-group-text" id="basic-addon1">Description</span>
+      <select class="form-control" id="description">
+      <option> back pain</option>
+      <option> neck pain</option>
+      <option> foot pain</option>
+      <option> chest pain</option>
+      </select>
+
+        <span class="input-group-text" id="basic-addon1">Times</span>
+        <input type="text" id="start" value="Start Time">
+        <input type="text" id="end" value="End Time">
+
+        <button type="submit" name="button">enter</button>
+      </form>
+
+      <div class="outputAppointment">
+
+        <p><span id="userName"></span>, This is your appointment information</p>
+
+
+        <p>Based on your description " <span id="userDescription"></span>." The date <span id="appointmentDate"></span> <span id="userTime"></span> is when you'll need to arrive. <span id="endtimes"></span> is when your return</p>
+      </div>
 
 
 
